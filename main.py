@@ -115,7 +115,7 @@ def go(config: DictConfig):
                 os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
                 "main",
                 parameters={
-                    "trainval_artifact": "trainval_data.csv:latest",
+                    "trainval_artifact": "tuanvufit-fpt/build-ml-pipeline-for-short-term-rental-prices-components_train_val_test_split/trainval_data.csv:v1",
                     "val_size": config["modeling"]["val_size"],
                     "random_seed": config["modeling"]["random_seed"],
                     "stratify_by": config["modeling"]["stratify_by"],
